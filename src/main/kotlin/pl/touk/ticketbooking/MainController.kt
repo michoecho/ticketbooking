@@ -30,7 +30,7 @@ class MainController(
         startsBefore: LocalDateTime?,
         @RequestParam(name = "page", defaultValue = "0")
         page: Int,
-        @RequestParam(name = "size", defaultValue = "25")
+        @RequestParam(name = "size", defaultValue = "1000")
         size: Int
     ) : List<ScreeningSummary> {
         val intervalStart = startsAfter ?: LocalDateTime.now()

@@ -19,13 +19,13 @@ class DatabaseInitializer {
     ) = ApplicationRunner {
         val rooms = listOf(roomRepo.save(Room("Room 1")), roomRepo.save(Room("Room 2")), roomRepo.save(Room("Room 3")))
 
-        for (room in rooms) for (row in 1..10) for (number in 1..20)
+        for (room in rooms) for (row in 1..5) for (number in 1..10)
             seatRepo.save(Seat(room, row, number))
 
         val movies = listOf(
-            movieRepo.save(Movie("Titanic", "James Cameron")),
-            movieRepo.save(Movie("The Dark Knight", "Christopher Nolan")),
-            movieRepo.save(Movie("The Return of the King", "Peter Jackson"))
+            movieRepo.save(Movie("Dzień Świra", "Marek Koterski")),
+            movieRepo.save(Movie("Mroczny Rycerz", "Christopher Nolan")),
+            movieRepo.save(Movie("Powrót Króla", "Peter Jackson"))
         )
 
         screeningRepo.save(Screening(movies[0], rooms[0], LocalDateTime.now().plusDays(1)))

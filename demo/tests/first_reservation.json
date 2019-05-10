@@ -1,0 +1,5 @@
+{
+	"firstName": "Błażej",
+	"surname": "Żółć",
+	"tickets": [{"seatId": 104, "ticketType": 164}, {"seatId": 105, "ticketType": 163}]
+}
