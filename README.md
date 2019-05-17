@@ -1,5 +1,5 @@
 # ticketbooking
-A TouK internship 2019 recruitment task. The specification can be found in `task.pdf`.
+A movie ticket booking system.
 
 This project is written in Spring with Kotlin, using Spring Boot, Spring MVC, Spring Data JPA, and H2.
 
